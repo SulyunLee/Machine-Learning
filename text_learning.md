@@ -1,6 +1,6 @@
- # Text Learning
- ### Bag of words in sklearn
- ```
+# Text Learning
+### Bag of words in sklearn
+```
 >>> from sklearn.feature_extraction.text import CountVectorizer
 >>> vectorizer = CountVectorizer()
 >>> string1 = "hi Katie the self driving car will be late Best Sebastian"
