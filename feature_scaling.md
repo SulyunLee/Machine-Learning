@@ -3,7 +3,7 @@ Feature scaling: usually [0,1]
 Rescale into new range for more sensible results.
 
 ### Features scaling formula
-<img src="feature_scaling1.jpg">
+<img src="feature_scaling1.JPG">
 x' : new(rescaled) feature
 0 <= x' <= 1
 
