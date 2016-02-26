@@ -14,8 +14,8 @@
 ```
 
 ### Stopwords
-low-information, highly frequent word.
-***Example***)the, in, for, you, will, have, be
+low-information, highly frequent word.<br>
+***Example***) the, in, for, you, will, have, be
 
 ### Stopwords in NLTK(National Language Tool Kit)
 ```
@@ -30,3 +30,28 @@ True
 >>> swp[10]
 'yours'
 ```
+
+### Stemming to Consolidate vocabulary
+unresponsive
+response
+responsivity
+responsiveness
+respond
+-> stemmer is 'respon'
+
+### Stemming with NLTK
+```
+>>> from nltk.stem.snowball import SnowballStemmer
+>>> stemmer = SnowballStemmer("english")
+>>> stemmer.stem("responsiveness")
+u'respons'
+>>> stemmer.stem("responsivity")
+u'respons'
+>>> stemmer.stem("unresponsive")
+u'unrespons'
+```
+
+### Weighting by Term Frequency
+***TfIdf Representation***
+TF - term Frequency (like bag of words)
+Idf - inverse document frequency (weighting by how often word occurs in corpus)
